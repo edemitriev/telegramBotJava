@@ -8,9 +8,9 @@ import java.net.URL;
 import java.util.Scanner;
 
 public class Weather {
-    //0a650441ac5b4b24adcdb44167546acc test "http://api.openweathermap.org/data/2.5/weather?q=" + message + "&units=metric&appid=0a650441ac5b4b24adcdb44167546acc"
+    
     public static String getWeather(String message, Model model) throws IOException {
-        URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q=" + message + ",ru,uk,eu&units=metric&APPID=e54ba1a7f3cd0dc55dcbd51560968437");
+        URL url = new URL("http://api.openweathermap.org/data/2.5/weather?q=" + message + ",ru,uk,eu&units=metric&APPID=YOUR_API_WEATHER_TOKEN");
 
         Scanner in = new Scanner((InputStream) url.getContent());
         String result = "";
